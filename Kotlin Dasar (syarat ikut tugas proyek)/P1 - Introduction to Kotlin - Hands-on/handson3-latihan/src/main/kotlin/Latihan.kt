@@ -6,19 +6,21 @@
 // melengkapi semua TODO di bawah — itu normal untuk latihan ini!
 
 class ScoreBoard(private val skorMentah: List<Int?>) {
-    val skorValid: List<Int> = skorMentah.filterNotNull()
+    // TODO: Buat property `skorValid` bertipe List<Int> berisi skorMentah
+    // tanpa elemen null. Gunakan fungsi filterNotNull().
+    // val skorValid: List<Int> = ???
 
     fun skorKelulusan(batasLulus: Int): List<Int> {
-        return skorValid.filter { it >= batasLulus }.sortedDescending()
+        // TODO: Kembalikan skorValid yang >= batasLulus, diurutkan menurun.
+        // Gunakan .filter { ... } dan .sortedDescending()
+        TODO()
     }
 }
 
 fun cetakRentangGanjil(sampai: Int) {
     // TODO: Cetak semua bilangan GANJIL dari 1 sampai `sampai` (inklusif),
     // dipisah spasi, menggunakan for-loop dengan range ber-step:
-    for (i in 1..sampai step 2) {
-        print("$i ")
-    }
+    //   for (i in 1..sampai step 2) { ... }
 }
 
 fun main() {

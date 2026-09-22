@@ -4,8 +4,16 @@
 // nullable dengan safe call (?.) dan elvis operator (?:).
 
 fun describeProfile(nama: String, umur: Int?, kota: String = "Tidak diketahui"): String {
-    val umurText = umur?.toString() ?: "umur tidak diketahui"
-    return "Nama: $nama, Umur: $umurText, Kota: $kota"
+    // TODO 1: Buat val bernama umurText yang berisi:
+    //   - "<umur> tahun" jika umur tidak null
+    //   - "umur tidak diketahui" jika umur null
+    //   Gunakan safe call (?.) dan elvis operator (?:)
+
+    // TODO 2: Kembalikan (return) satu String dengan format:
+    //   "Nama: <nama>, Umur: <umurText>, Kota: <kota>"
+    //   Gunakan string template ($nama, dst), bukan concatenation (+)
+
+    return ""
 }
 
 fun main() {
